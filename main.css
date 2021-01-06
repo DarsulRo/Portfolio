@@ -50,7 +50,7 @@ section{
     overflow: hidden;
 }
 #about .picture{
-    left: max(80%,35rem);
+    left: max(80%,31rem);
     width: max(15%);
     position: absolute;
     z-index: 1;
@@ -120,14 +120,51 @@ section{
 #skills .section-title{
     color: var(--white);
 }
-#skills{
-
+#skills .body{
+    padding: 3rem min(1rem,3%);
 }
-#skills{
-
+#skills .box{
+    padding: 2rem 1rem;
+    background-color: var(--white);
+    width: min(100%, 50rem);
+    margin: 2rem 0;
+    border-radius: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 1rem -5px var(--black);
+    transition: box-shadow 0.3s ease;
 }
-#skills{
-
+#skills .box:hover{
+    box-shadow: 0 0 1rem -1px var(--black);
+}
+#skills .box .title{
+    display: inline;
+    font-size: 1.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#skills .box > .flex-row{
+    padding: 1rem 0;
+    width: 100%;
+}
+#skills .box .image{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+#skills .box .image img{
+    width: 100%;
+}
+#skills .box .div10{
+    width: 10%;
+}
+#skills .box .skills{
+    width: 70%;
+    font-size: 1.5rem;
+}
+#skills .box .skills .skill{
+    text-align: right;
+    width: 100%;
 }
 
 #work{
@@ -171,6 +208,10 @@ section{
     box-shadow: 0 0 1rem -5px var(--black);
     margin: 2rem 0;
     background-color: var(--blue);
+    transition: box-shadow 0.2s ease;
+}
+#work .both:hover, #work .both:focus-within{
+    box-shadow: 0 0 1rem -2px var(--black);
 }
 #work .both .work-desc{
     flex-grow: 5;
@@ -239,6 +280,11 @@ section{
     color: var(--black);
     font-size: 1.5rem;
     font-weight: 700;
+    box-shadow: 0 0 1rem -10px var(--black);
+    transition: all 0.2s ease;
+}
+#work .both .link a:hover{
+    box-shadow: 0 0 1rem -5px var(--white);
 }
 
 
@@ -269,15 +315,19 @@ section{
     background-color: var(--white);
     border-radius: 1rem;
     box-shadow: 0 0 1rem -5px var(--black);
+    transition: all 0.2s ease;
+}
+#contact .row:hover{
+    box-shadow: 0 0 1rem 0px var(--white);
 }
 #contact .row img{
-    height: 6rem;
+    height: 4rem;
     margin-right: min(2rem,10%);
 }
 #contact .row p{
     text-decoration: none;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600;
 }
@@ -296,6 +346,7 @@ section{
 }
 #footer .flex-column{
     align-items: flex-start;
+    align-self: flex-start;
 }
 #footer a{
     cursor: pointer;

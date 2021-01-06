@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function (){
 
 let random = Math.random()
 random = Math.floor(random*100000)%13 + 1
-mepicture.setAttribute('src','res/pictures/dorin'+random+'.png')
+mepicture.setAttribute('src','res/images/dorin'+random+'.png')
 
 window.addEventListener('load',function(){
     mepicture.style.opacity=1;
