@@ -2,7 +2,7 @@
     --white: #f0f0f0;
     --black: #232323;
     --gray: #454545;
-    --blue: #0099ff;
+    --blue: #1b88cc;
 }
 
 @font-face{
@@ -83,16 +83,13 @@
     }
 }
 .fadein{
-    
     animation: fadein 1s ease 1s, opacity 2s;
 }  
 @keyframes fadein{
     0%{
-        opacity: 0;
-        transform: translateX(5rem);
+        transform: translateX(6rem);
     }
     100%{
-        opacity: 1;
         transform: translateX(0);
     }
 }

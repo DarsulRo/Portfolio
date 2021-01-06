@@ -4,14 +4,21 @@ function smoothScroll(anchor){
 }
 
 let mepicture = document.getElementById('mepicture')
+window.addEventListener('DOMContentLoaded', function (){
+    mepicture.style.opacity=0;
+})
+
 let random = Math.random()
 random = Math.floor(random*100000)%13 + 1
 mepicture.setAttribute('src','res/pictures/dorin'+random+'.png')
 
+window.addEventListener('load',function(){
+    mepicture.style.opacity=1;
+    mepicture.classList.add('fadein')
+})
 
 var Spos = [0,0,0,0,0]
 let rowCount = document.querySelectorAll('#work .body .row').length
-
 for(let i=1;i<=rowCount;i++){
     let slides = document.getElementById('slides'+i)
     slides.style.minWidth= `${slides.childElementCount}00%`

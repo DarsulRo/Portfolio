@@ -22,6 +22,9 @@ nav ul a{
     font-weight: 300;
     cursor: pointer;
 }
+nav ul a:hover{
+    text-shadow: 0 0 2px var(--white);
+}
 main{
     width: 100%;
 }
@@ -40,18 +43,18 @@ section{
 #about .top{
     color: var(--white);
     width: 100%;
-    background-color: #0099ff;
+    background-color: var(--blue);
     padding-top: 4rem;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
 }
 #about .picture{
+    left: max(80%,35rem);
+    width: max(15%);
     position: absolute;
     z-index: 1;
-    width: max(15%);
     bottom: 0;
-    left: max(80%,40rem);
 }
 #about .title{
     z-index: 2;
@@ -111,25 +114,38 @@ section{
     margin: 1rem 0;
 }
 
+#skills{
+    background-color: var(--blue);
+}
+#skills .section-title{
+    color: var(--white);
+}
+#skills{
 
+}
+#skills{
+
+}
+#skills{
+
+}
 
 #work{
-    background-color: var(--blue);
+    background-color: var(--white);
     justify-content: flex-start;
 }
 #work .section-title{
-    color: var(--white);
+    color: var(--black);
     padding: 2rem 0;
     margin-bottom: 3rem;
 }
 #work .body{
-    padding: 2rem min(5%,2rem);
+    padding: 2rem min(3%,2rem);
     overflow: hidden;
 }
 #work .linebreaker{
     width: 120%;
-    height: 2px;
-    background-color: white;
+    background-color: var(--blue);
     margin: 4rem -3rem;
 }
 #work .row{
@@ -137,18 +153,24 @@ section{
 }
 #work  .work-title{
     align-self: flex-start;
+    color: var(--black);
     padding-left: 2rem;
 }
 #work .work-title h1{
     font-size: 2.5rem;
     font-weight: 300;
+    font-weight: 600;
 }
 #work .both{
-    padding: 2rem 0;
+    padding: 1rem 0;
     height: 100%;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -5px var(--black);
+    margin: 2rem 0;
+    background-color: var(--blue);
 }
 #work .both .work-desc{
     flex-grow: 5;
@@ -202,10 +224,27 @@ section{
     height: 3rem;
     cursor: pointer;
 }
+#work .both .link{
+    padding: 1rem;
+    margin-top: 4rem;
+}
+#work .both .link a{
+    background-color: white;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 
 #contact{
     justify-content: flex-start;
+    background-color: var(--blue);
 }
 #contact .body{
     justify-content: flex-start;
@@ -213,24 +252,34 @@ section{
 }
 #contact .section-title{
     margin-bottom: 6rem;
+    color: var(--white);
 }
 #contact .contacts{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+    justify-content: space-evenly;
 }
 #contact .row{
-    justify-content: flex-start;
-    margin: 2rem;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -5px var(--black);
 }
 #contact .row img{
     height: 6rem;
     margin-right: min(2rem,10%);
 }
-#contact .row a{
+#contact .row p{
+    text-decoration: none;
+    color: var(--black);
     font-size: 2rem;
     text-decoration: none;
+    font-weight: 600;
 }
 
 
@@ -258,6 +307,9 @@ section{
     align-self: flex-start;
 }
 @media (orientation: portrait){
+    html{
+        font-size: 0.6rem;
+    }
     #about .row{
         flex-direction: column;
     }
