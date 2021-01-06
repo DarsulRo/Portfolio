@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comsa Dorin</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav class="flex-row">
+        <ul class="flex-row">
+            <a onclick="smoothScroll('about-anchor')">About</a>
+            <a onclick="smoothScroll('work-anchor')">Work</a>
+            <a onclick="smoothScroll('contact-anchor')"> Contact</a>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="flex-column" section="about">
+
+            <div class="top flex-column">
+                <div class="title flex-column flip">
+                    <h1>Comșa Dorin</h1>
+                    <h2>-Web Developer-</h2>
+                </div>
+                <div class="flex-row w100">
+                    <div class="desc flip flex-column">
+                        <h1>Who Am I?</h1>
+                        <p>I am a 18 year old computer science student passionate about coding, programming, graphic
+                            design and more,
+                            I've worked on a few projects during the years that I am very proud of.
+                        </p>
+                    </div>
+
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path id="aboutme" fill="#f0f0f0" fill-opacity="1"
+                        d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,122.7C672,96,768,96,864,122.7C960,149,1056,203,1152,224C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+                <img id="mepicture" class="picture fadein" src="res/pictures/dorin1.png" alt="">
+            </div>
+            <div class="content w100 flex-column">
+                <h1 id="about-anchor" class="section-title flip">About me</h1>
+                <div class="flip row wrap flex-row">
+                    <div class="flex-row image"><img src="res/studies.svg" alt=""></div>
+                    <div class="text">
+                        <p> I have studied at Inochentie Micu Clain National College in Blaj, where I pursued computer
+                            science.
+                        </p>
+                    </div>
+                </div>
+                <div class="flip row reverse-wrap flex-row">
+                    <div class="text">
+                        <p> During highschool, I participated in many programming-related competitions, managing to even
+                            get qualified in the National Olympiad in Informatics.</p>
+                    </div>
+                    <div class="flex-row image"><img src="res/medal.svg" alt=""></div>
+                </div>
+                <div class="flip row wrap flex-row">
+                    <div class="flex-row image"><img src="res/rubix.svg" alt=""></div>
+                    <div class="text">
+                        <p>I was also part of our robotics team, Rubix, competing in the First Tech Challenge. In the
+                            last season we mon Think Award 1st place prize.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="flex-column" section="work">
+            <div class="w100">
+                <svg class="w100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+                    <path fill="#f0f0f0" fill-opacity="1"
+                        d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,90.7C672,64,768,64,864,90.7C960,117,1056,171,1152,181.3C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+
+            <h1 id="work-anchor" class="flip section-title">My work</h1>
+
+            <div class="body flex-column w100">
+                <div class="row flex-column w100">
+                    <div class="flip work-title">
+                        <h1>Typhoon</h1>
+                    </div>
+                    <div class="both flex-row">
+                        <div class="work-desc">
+                            <p class="flip">
+                                Typhoon is my attempt at making a social media website. It started as a test for an
+                                authentication API, and it gradually grew and grew.
+                            </p>
+                            <p class="flip">
+                                Technologies, languages and libraries used for it are:
+                                HTML, CSS, JavaScript, Node.js, Express, JWT and MongoDB.
+                            </p>
+                        </div>
+                        <div class="image flex-column">
+                            <div class="slideshow flex-row">
+                                <div class="boxshadow"></div>
+                                <div id="slides1" class="flex-row slides">
+                                    <a href="res/pictures/typhoon2.png" target="_blank" class="slide">
+                                        <img src="res/pictures/typhoon1.png" alt="">
+                                    </a>
+                                    <a href="res/pictures/typhoon3.png" target="_blank" class="slide">
+                                        <img src="res/pictures/typhoon2.png" alt="">
+                                    </a>
+                                    <a href="res/pictures/typhoon3.png" target="_blank" class="slide">
+                                        <img src="res/pictures/typhoon3.png" alt="">
+                                    </a>
+                                    <a href="res/pictures/typhoon4.png" target="_blank" class="slide">
+                                        <img src="res/pictures/typhoon4.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-controls">
+                                <a><img src="res/left-arrow.svg" onclick="slideLeft(1)"></a>
+                                <a><img src="res/right-arrow.svg" onclick="slideRight(1)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linebreaker"></div>
+
+                <div class="row flex-column w100">
+                    <div class="flip work-title">
+                        <h1>BACH</h1>
+                    </div>
+                    <div class="both w100 flex-row">
+
+                        <div class="work-desc">
+                            <p class="flip">
+                                BAC Helper is a website made to help you prepare for the romanian Bacalaureat exam. Here
+                                you can find information about authors, their writings and more, in a systematic and
+                                intuitive way. It is still in development!
+                            </p>
+                            <p class="flip">
+                                Technologies, languages and libraries used for it are:
+                                HTML, CSS, JavaScript, Node.js, Express and MongoDB.
+                            </p>
+                        </div>
+                        <div class="image flex-column">
+                            <div class="slideshow flex-row">
+                                <div class="boxshadow"></div>
+                                <div id="slides2" class="flex-row slides">
+                                    <a href="res/pictures/bach1.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/bach1.png">
+                                    </a>
+                                    <a href="res/pictures/bach2.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/bach2.png">
+                                    </a>
+                                    <a href="res/pictures/bach3.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/bach3.png">
+                                    </a>
+                                    <a href="res/pictures/bach4.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/bach4.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-controls">
+                                <a><img src="res/left-arrow.svg" onclick="slideLeft(2)"></a>
+                                <a><img src="res/right-arrow.svg" onclick="slideRight(2)"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="linebreaker"></div>
+
+                <div class="row flex-column w100">
+                    <div class="flip work-title">
+                        <h1>Rubix Webpage</h1>
+                    </div>
+                    <div class="both w100 flex-row">
+                        <div class="work-desc">
+                            <p class="flip">
+                                Rubix Webpage is a website I made for my First Tech Challenge team. This was my first
+                                ever page to have a backend and a connection to a database.
+                            </p>
+                            <p class="flip">
+                                Technologies, languages and libraries used for it are:
+                                HTML, CSS, JavaScript, Node.js, Express and MongoDB.
+                            </p>
+                        </div>
+                        <div class="image flex-column">
+                            <div class="slideshow flex-row">
+                                <div class="boxshadow"></div>
+                                <div id="slides3" class="flex-row slides">
+
+                                    <a href="res/pictures/rubix1.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix1.png">
+                                    </a>
+                                    <a href="res/pictures/rubix2.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix2.png">
+                                    </a>
+                                    <a href="res/pictures/rubix3.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix3.png">
+                                    </a>
+                                    <a href="res/pictures/rubix4.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix4.png">
+                                    </a>
+                                    <a href="res/pictures/rubix5.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix5.png">
+                                    </a>
+                                    <a href="res/pictures/rubix6.png" target="_blank" rel="noopener noreferrer"
+                                        class="slide">
+                                        <img src="res/pictures/rubix6.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-controls">
+                                <a><img src="res/left-arrow.svg" onclick="slideLeft(3)"></a>
+                                <a><img src="res/right-arrow.svg" onclick="slideRight(3)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="flex-column" section="contact">
+            <div class="w100">
+                <svg class="w100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#0099ff" fill-opacity="1"
+                        d="M0,160L48,138.7C96,117,192,75,288,90.7C384,107,480,181,576,186.7C672,192,768,128,864,133.3C960,139,1056,213,1152,224C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="body flex-column w100">
+                <h1 id="contact-anchor" class="section-title flip">Where to find me</h1>
+
+                <div class="contacts flex-row">
+                    <div class="row flex-row">
+                        <img src="res/email.svg" alt="">
+                        <a href="mailto:comsaiuliand@gmail.com">Email</a>
+                    </div>
+                    <div class="row flex-row">
+                        <img src="res/github.svg" alt="">
+                        <a href="https://github.com/DarsulRo">Github</a>
+                    </div>
+                    <div class="row flex-row">
+                        <img src="res/instagram.svg" alt="">
+                        <a href="https://www.instagram.com/comsa.dorin">Instagram</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="flex-column w100">
+        <div class="w100">
+            <svg class="w100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+                <path fill="#f0f0f0" fill-opacity="1"
+                    d="M0,128L40,112C80,96,160,64,240,48C320,32,400,32,480,69.3C560,107,640,181,720,186.7C800,192,880,128,960,122.7C1040,117,1120,171,1200,186.7C1280,203,1360,181,1400,170.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div class="w100 flex-row">
+            <div class="flex-column">
+                <h1>Links</h1>
+                <a onclick="smoothScroll('about-anchor')">About</a>
+                <a onclick="smoothScroll('work-anchor')">Work</a>
+                <a onclick="smoothScroll('contact-anchor')"> Contact</a>
+            </div>
+            <div class="flex-column">
+                <h1>Contact</h1>
+                <a href="mailto:comsaiuliand@gmail.com">Email</a>
+                <a href="https://github.com/DarsulRo">Github</a>
+                <a href="https://www.instagram.com/comsa.dorin">Instagram</a>
+            </div>
+            <div class="flex-column">
+                <h1>Resources</h1>
+                <a href="https://www.flaticon.com/">Flaticon - User interface</a>
+                <a href="https://www.000webhost.com/">000WebHost - Host</a>
+                <a href="https://www.freenom.com/">Freenom - Domain name</a>
+            </div>
+
+        </div>
+        <h5>This page was also made by me, obiviously</h5>
+    </footer>
+</body>
+
+</html>

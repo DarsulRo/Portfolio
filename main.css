@@ -1,0 +1,277 @@
+@import 'root.css';
+body{
+    background-color: var(--white);    
+}
+nav.flex-row{
+    width: 100%;
+    top:0;
+    position: absolute;
+    z-index: 3;
+    color: var(--white);
+}
+nav.flex-row ul{
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0.5rem 1.5rem;
+}
+nav ul a{
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    font-size: 1.75rem;
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+.section-title{
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+}
+
+#about{
+    justify-content: flex-start;
+}
+#about .top{
+    color: var(--white);
+    width: 100%;
+    background-color: #0099ff;
+    padding-top: 4rem;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+#about .picture{
+    position: absolute;
+    z-index: 1;
+    width: max(15%);
+    bottom: 0;
+    left: max(80%,40rem);
+}
+#about .title{
+    z-index: 2;
+    margin: 6rem 0;
+}
+#about .title h1{
+    font-size: 5rem;
+}
+#about .title h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#about div.w100{
+    justify-content: flex-start;
+}
+#about .desc{
+    width: min(30rem,100%);
+    align-items: flex-start;
+    margin-left: 5%;
+    z-index: 2;
+}
+#about .desc h1{
+    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+#about .desc p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#about svg{
+    width: 100%;
+    z-index: 2;
+}
+
+#about .content{
+    padding: 0 min(10%,10rem);
+}
+#about .row .image{
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    margin: 4rem 2rem;
+}
+#about .row .image img{
+    height: 10rem;
+    width: 10rem;
+}
+#about .row .text{
+    color: var(--gray);
+    flex-grow: 2;
+    flex-basis: 0;
+    min-width: 20rem;
+}
+#about .row .text p{
+    font-size: 1.75rem;
+    margin: 1rem 0;
+}
+
+
+
+#work{
+    background-color: var(--blue);
+    justify-content: flex-start;
+}
+#work .section-title{
+    color: var(--white);
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+#work .body{
+    padding: 2rem min(5%,2rem);
+    overflow: hidden;
+}
+#work .linebreaker{
+    width: 120%;
+    height: 2px;
+    background-color: white;
+    margin: 4rem -3rem;
+}
+#work .row{
+    color: var(--white);
+}
+#work  .work-title{
+    align-self: flex-start;
+    padding-left: 2rem;
+}
+#work .work-title h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+#work .both{
+    padding: 2rem 0;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#work .both .work-desc{
+    flex-grow: 5;
+    flex-basis: 0;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+#work .both .work-desc P{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+#work .row .image{
+    flex-grow: 7;
+    flex-basis: 0;
+    padding: 2rem;
+}
+#work .slideshow{
+    width: min(100%,35rem);
+    position: relative;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    border-radius: 0.25rem;
+}
+#work .boxshadow{
+    width: 75%;
+    height: 75%;
+}
+#work .slides{
+    justify-content: flex-start;
+    position: relative;
+    left:0;
+    top:0;
+    transition: left 0.3s ease;
+}
+#work .slide{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    overflow: hidden;
+}
+#work .slide img{
+    width: 100%;
+}
+#work .slide-controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+#work .slide-controls a img{
+    height: 3rem;
+    cursor: pointer;
+}
+
+
+#contact{
+    justify-content: flex-start;
+}
+#contact .body{
+    justify-content: flex-start;
+    padding-bottom:4rem;
+}
+#contact .section-title{
+    margin-bottom: 6rem;
+}
+#contact .contacts{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#contact .row{
+    justify-content: flex-start;
+    margin: 2rem;
+}
+#contact .row img{
+    height: 6rem;
+    margin-right: min(2rem,10%);
+}
+#contact .row a{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+#footer{
+    justify-content: flex-start;
+    color: var(--white);
+    background-color: var(--black);
+}
+#footer .flex-row{
+    padding:3rem 0;
+}
+#footer h1{
+    margin-bottom: 1rem;
+}
+#footer .flex-column{
+    align-items: flex-start;
+}
+#footer a{
+    cursor: pointer;
+    padding:0.5rem;
+    text-decoration: none;
+}
+#footer h5{
+    margin: 0.25rem 0;
+    align-self: flex-start;
+}
+@media (orientation: portrait){
+    #about .row{
+        flex-direction: column;
+    }
+    #about .reverse-wrap .text{
+        order: 2;
+    }
+    #about .reverse-wrap .image{
+        order: 1;
+    }
+    #work .both{
+        flex-direction: column;
+    }
+    #work .slideshow{
+        width: 100%;
+    }
+
+}
