@@ -13,6 +13,7 @@ nav.flex-row ul{
     width: 100%;
     justify-content: flex-end;
     margin: 0.5rem 1.5rem;
+    flex-wrap: wrap;
 }
 nav ul a{
     padding: 0.5rem;
@@ -50,7 +51,7 @@ section{
     overflow: hidden;
 }
 #about .picture{
-    left: max(80%,31rem);
+    left: max(80%,40rem);
     width: max(15%);
     position: absolute;
     z-index: 1;
@@ -62,6 +63,7 @@ section{
 }
 #about .title h1{
     font-size: 5rem;
+    text-align: center;
 }
 #about .title h2{
     font-size: 1.5rem;
@@ -352,10 +354,7 @@ section{
     cursor: pointer;
     padding:0.5rem;
     text-decoration: none;
-}
-#footer h5{
-    margin: 0.25rem 0;
-    align-self: flex-start;
+    font-size: 1.35rem;
 }
 @media (orientation: portrait){
     html{
